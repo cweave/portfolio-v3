@@ -7,8 +7,10 @@ import store from './store';
 import './styles/styles.scss';
 
 Vue.config.productionTip = false;
-
-Vue.use(Meta, VueAnalytics, {
+Vue.use(Meta, {
+	router
+});
+Vue.use(VueAnalytics, {
 	id: 'UA-61317148-4',
 	router,
 	debug: {
